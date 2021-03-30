@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -5.306
+TNS   : -766.874
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : -3.880
+TNS   : -27.124
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : -2.574
+TNS   : -7.580
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : -0.161
+TNS   : -0.499
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -256.696
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -4.638
+TNS   : -656.511
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : -3.557
+TNS   : -24.419
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : -2.282
+TNS   : -6.389
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : -0.149
+TNS   : -0.523
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -256.696
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -2.713
+TNS   : -354.145
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : -1.715
+TNS   : -10.548
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : -1.599
+TNS   : -5.317
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : -0.184
+TNS   : -1.233
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -267.219
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:cpu0|control_unit:control0|current_state.S_DECODE_3'
+Slack : 0.429
+TNS   : 0.000
+
+------------------------------------------------------------
