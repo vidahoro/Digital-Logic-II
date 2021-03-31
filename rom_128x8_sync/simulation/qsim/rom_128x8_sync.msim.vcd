@@ -1,0 +1,258 @@
+$comment
+	File created using the following command:
+		vcd file rom_128x8_sync.msim.vcd -direction
+$end
+$date
+	Wed Mar 31 10:08:56 2021
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module rom_128x8_sync_vlg_vec_tst $end
+$var reg 8 ! address [7:0] $end
+$var reg 1 " clock $end
+$var wire 1 # data_out [7] $end
+$var wire 1 $ data_out [6] $end
+$var wire 1 % data_out [5] $end
+$var wire 1 & data_out [4] $end
+$var wire 1 ' data_out [3] $end
+$var wire 1 ( data_out [2] $end
+$var wire 1 ) data_out [1] $end
+$var wire 1 * data_out [0] $end
+$var wire 1 + sampler $end
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 data_out[0]~output_o $end
+$var wire 1 3 data_out[1]~output_o $end
+$var wire 1 4 data_out[2]~output_o $end
+$var wire 1 5 data_out[3]~output_o $end
+$var wire 1 6 data_out[4]~output_o $end
+$var wire 1 7 data_out[5]~output_o $end
+$var wire 1 8 data_out[6]~output_o $end
+$var wire 1 9 data_out[7]~output_o $end
+$var wire 1 : clock~input_o $end
+$var wire 1 ; clock~inputclkctrl_outclk $end
+$var wire 1 < address[0]~input_o $end
+$var wire 1 = address[1]~input_o $end
+$var wire 1 > address[5]~input_o $end
+$var wire 1 ? address[4]~input_o $end
+$var wire 1 @ address[6]~input_o $end
+$var wire 1 A address[2]~input_o $end
+$var wire 1 B Mux7~0_combout $end
+$var wire 1 C address[3]~input_o $end
+$var wire 1 D Mux7~1_combout $end
+$var wire 1 E address[7]~input_o $end
+$var wire 1 F data_out[0]~reg0_q $end
+$var wire 1 G Mux6~0_combout $end
+$var wire 1 H Mux6~1_combout $end
+$var wire 1 I data_out[1]~reg0_q $end
+$var wire 1 J Mux5~0_combout $end
+$var wire 1 K Mux5~1_combout $end
+$var wire 1 L data_out[2]~reg0_q $end
+$var wire 1 M Mux4~0_combout $end
+$var wire 1 N data_out[3]~reg0_q $end
+$var wire 1 O Mux3~0_combout $end
+$var wire 1 P Mux3~1_combout $end
+$var wire 1 Q data_out[4]~reg0_q $end
+$var wire 1 R Mux2~0_combout $end
+$var wire 1 S Mux2~1_combout $end
+$var wire 1 T data_out[5]~reg0_q $end
+$var wire 1 U Mux1~0_combout $end
+$var wire 1 V Mux1~1_combout $end
+$var wire 1 W data_out[6]~reg0_q $end
+$var wire 1 X Mux0~0_combout $end
+$var wire 1 Y Mux0~1_combout $end
+$var wire 1 Z data_out[7]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10111 !
+0"
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+x+
+0,
+1-
+x.
+1/
+10
+11
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+1<
+1=
+0>
+1?
+0@
+1A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+0I
+1J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+1X
+0Y
+0Z
+$end
+#40000
+1"
+1:
+1;
+0+
+#80000
+0"
+0:
+0;
+1+
+#120000
+1"
+1:
+1;
+0+
+#160000
+0"
+0:
+0;
+1+
+#200000
+1"
+1:
+1;
+0+
+#240000
+0"
+0:
+0;
+1+
+#280000
+1"
+1:
+1;
+0+
+#320000
+0"
+0:
+0;
+1+
+#360000
+1"
+1:
+1;
+0+
+#400000
+0"
+0:
+0;
+1+
+#440000
+1"
+1:
+1;
+0+
+#480000
+0"
+0:
+0;
+1+
+#520000
+1"
+1:
+1;
+0+
+#560000
+0"
+0:
+0;
+1+
+#600000
+1"
+1:
+1;
+0+
+#640000
+0"
+0:
+0;
+1+
+#680000
+1"
+1:
+1;
+0+
+#720000
+0"
+0:
+0;
+1+
+#760000
+1"
+1:
+1;
+0+
+#800000
+0"
+0:
+0;
+1+
+#840000
+1"
+1:
+1;
+0+
+#880000
+0"
+0:
+0;
+1+
+#920000
+1"
+1:
+1;
+0+
+#960000
+0"
+0:
+0;
+1+
+#1000000
