@@ -7,75 +7,75 @@ vcomputer
 Z1 Ije3CTmFm1;jG^H7`8fUdF0
 Z2 VFh4lAOja2>D2bhVc;;6^_0
 Z3 dC:\Users\vidah\Desktop\Universidad_del_Cauca\Circuitos_Digitales_II\Proyectos\Entrega1\computer\simulation\qsim
-Z4 w1617147366
+Z4 w1617186479
 Z5 8computer.vo
 Z6 Fcomputer.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
+Z8 !s90 -work|work|computer.vo|
+Z9 o-work work -O0
 !i10b 1
-Z9 !s100 1mSfoCPIKC1=a:O^a=c@21
+Z10 !s100 1mSfoCPIKC1=a:O^a=c@21
 !s85 0
-Z10 !s108 1617147368.551000
-Z11 !s107 computer.vo|
-Z12 !s90 -work|work|computer.vo|
+Z11 !s108 1617186481.010000
+Z12 !s107 computer.vo|
 !s101 -O0
 vcomputer_vlg_check_tst
 !i10b 1
-!s100 >fBK9oIoVgNlmo[KJ1n7V3
-ImO]F60bD0aIcz2]@7W89J0
-VMN@>2Gn0Hn18CZ4AJ^dTN1
+Z13 !s100 >fBK9oIoVgNlmo[KJ1n7V3
+Z14 ImO]F60bD0aIcz2]@7W89J0
+Z15 VMN@>2Gn0Hn18CZ4AJ^dTN1
 R3
-Z13 w1617147364
-Z14 8Waveform.vwf.vt
-Z15 FWaveform.vwf.vt
+Z16 w1617186478
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
 L0 91
 R7
 r1
 !s85 0
 31
-Z16 !s108 1617147368.820000
-Z17 !s107 Waveform.vwf.vt|
-Z18 !s90 -work|work|Waveform.vwf.vt|
+Z19 !s108 1617186481.262000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
 !s101 -O0
-R8
+R9
 vcomputer_vlg_sample_tst
 !i10b 1
-!s100 GOYa;lN:zAkAkU?QRPS>P2
-Ioi[UFg@H7cN9Y^LP<XGEh2
-V`0UCBOgPQ@f<lD1U<Z@Oo1
+Z22 !s100 GOYa;lN:zAkAkU?QRPS>P2
+Z23 Ioi[UFg@H7cN9Y^LP<XGEh2
+Z24 V`0UCBOgPQ@f<lD1U<Z@Oo1
 R3
-R13
-R14
-R15
+R16
+R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
+R19
+R20
+R21
+!s101 -O0
+R9
+vcomputer_vlg_vec_tst
+!i10b 1
+!s100 iMkzKYo3_5z2XUFfW?46z3
+Ie1aIb>AHl_Ue;ZOUBh9JX1
+Z25 V2?<Bzjb[WJizdH7>F:UPP1
+R3
 R16
 R17
 R18
-!s101 -O0
-R8
-vcomputer_vlg_vec_tst
-!i10b 1
-!s100 S7^0KDi>==N@S4e_K35P;0
-I1@UEZ?zILG`kMid1J2eBT2
-V2?<Bzjb[WJizdH7>F:UPP1
-R3
-R13
-R14
-R15
-L0 2591
+Z26 L0 2591
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R19
+R20
+R21
 !s101 -O0
-R8
+R9

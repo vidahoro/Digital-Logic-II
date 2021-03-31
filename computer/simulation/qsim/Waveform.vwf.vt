@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/30/2021 18:36:03"
+// Generated on "03/31/2021 05:27:57"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    computer
 // 
@@ -2672,246 +2672,249 @@ computer i1 (
 initial
 begin
 	clock = 1'b1;
+	clock = #480000 1'b0;
 end 
 // port_in_00[ 7 ]
 initial
 begin
-	port_in_00[7] = 1'b0;
+	port_in_00[7] = 1'b1;
 end 
 // port_in_00[ 6 ]
 initial
 begin
 	port_in_00[6] = 1'b0;
+	port_in_00[6] = #400000 1'b1;
+	port_in_00[6] = #80000 1'b0;
 end 
 // port_in_00[ 5 ]
 initial
 begin
-	port_in_00[5] = 1'b0;
+	port_in_00[5] = 1'b1;
 end 
 // port_in_00[ 4 ]
 initial
 begin
-	port_in_00[4] = 1'b0;
+	port_in_00[4] = 1'b1;
 end 
 // port_in_00[ 3 ]
 initial
 begin
-	port_in_00[3] = 1'b0;
+	port_in_00[3] = 1'b1;
 end 
 // port_in_00[ 2 ]
 initial
 begin
-	port_in_00[2] = 1'b0;
+	port_in_00[2] = 1'b1;
 end 
 // port_in_00[ 1 ]
 initial
 begin
-	port_in_00[1] = 1'b0;
+	port_in_00[1] = 1'b1;
 end 
 // port_in_00[ 0 ]
 initial
 begin
-	port_in_00[0] = 1'b0;
+	port_in_00[0] = 1'b1;
 end 
 // port_in_01[ 7 ]
 initial
 begin
-	port_in_01[7] = 1'b0;
+	port_in_01[7] = 1'b1;
 end 
 // port_in_01[ 6 ]
 initial
 begin
-	port_in_01[6] = 1'b0;
+	port_in_01[6] = 1'b1;
 end 
 // port_in_01[ 5 ]
 initial
 begin
-	port_in_01[5] = 1'b0;
+	port_in_01[5] = 1'b1;
 end 
 // port_in_01[ 4 ]
 initial
 begin
-	port_in_01[4] = 1'b0;
+	port_in_01[4] = 1'b1;
 end 
 // port_in_01[ 3 ]
 initial
 begin
-	port_in_01[3] = 1'b0;
+	port_in_01[3] = 1'b1;
 end 
 // port_in_01[ 2 ]
 initial
 begin
-	port_in_01[2] = 1'b0;
+	port_in_01[2] = 1'b1;
 end 
 // port_in_01[ 1 ]
 initial
 begin
-	port_in_01[1] = 1'b0;
+	port_in_01[1] = 1'b1;
 end 
 // port_in_01[ 0 ]
 initial
 begin
-	port_in_01[0] = 1'b0;
+	port_in_01[0] = 1'b1;
 end 
 // port_in_02[ 7 ]
 initial
 begin
-	port_in_02[7] = 1'b0;
+	port_in_02[7] = 1'b1;
 end 
 // port_in_02[ 6 ]
 initial
 begin
-	port_in_02[6] = 1'b0;
+	port_in_02[6] = 1'b1;
 end 
 // port_in_02[ 5 ]
 initial
 begin
-	port_in_02[5] = 1'b0;
+	port_in_02[5] = 1'b1;
 end 
 // port_in_02[ 4 ]
 initial
 begin
-	port_in_02[4] = 1'b0;
+	port_in_02[4] = 1'b1;
 end 
 // port_in_02[ 3 ]
 initial
 begin
-	port_in_02[3] = 1'b0;
+	port_in_02[3] = 1'b1;
 end 
 // port_in_02[ 2 ]
 initial
 begin
-	port_in_02[2] = 1'b0;
+	port_in_02[2] = 1'b1;
 end 
 // port_in_02[ 1 ]
 initial
 begin
-	port_in_02[1] = 1'b0;
+	port_in_02[1] = 1'b1;
 end 
 // port_in_02[ 0 ]
 initial
 begin
-	port_in_02[0] = 1'b0;
+	port_in_02[0] = 1'b1;
 end 
 // port_in_03[ 7 ]
 initial
 begin
-	port_in_03[7] = 1'b0;
+	port_in_03[7] = 1'b1;
 end 
 // port_in_03[ 6 ]
 initial
 begin
-	port_in_03[6] = 1'b0;
+	port_in_03[6] = 1'b1;
 end 
 // port_in_03[ 5 ]
 initial
 begin
-	port_in_03[5] = 1'b0;
+	port_in_03[5] = 1'b1;
 end 
 // port_in_03[ 4 ]
 initial
 begin
-	port_in_03[4] = 1'b0;
+	port_in_03[4] = 1'b1;
 end 
 // port_in_03[ 3 ]
 initial
 begin
-	port_in_03[3] = 1'b0;
+	port_in_03[3] = 1'b1;
 end 
 // port_in_03[ 2 ]
 initial
 begin
-	port_in_03[2] = 1'b0;
+	port_in_03[2] = 1'b1;
 end 
 // port_in_03[ 1 ]
 initial
 begin
-	port_in_03[1] = 1'b0;
+	port_in_03[1] = 1'b1;
 end 
 // port_in_03[ 0 ]
 initial
 begin
-	port_in_03[0] = 1'b0;
+	port_in_03[0] = 1'b1;
 end 
 // port_in_04[ 7 ]
 initial
 begin
-	port_in_04[7] = 1'b0;
+	port_in_04[7] = 1'b1;
 end 
 // port_in_04[ 6 ]
 initial
 begin
-	port_in_04[6] = 1'b0;
+	port_in_04[6] = 1'b1;
 end 
 // port_in_04[ 5 ]
 initial
 begin
-	port_in_04[5] = 1'b0;
+	port_in_04[5] = 1'b1;
 end 
 // port_in_04[ 4 ]
 initial
 begin
-	port_in_04[4] = 1'b0;
+	port_in_04[4] = 1'b1;
 end 
 // port_in_04[ 3 ]
 initial
 begin
-	port_in_04[3] = 1'b0;
+	port_in_04[3] = 1'b1;
 end 
 // port_in_04[ 2 ]
 initial
 begin
-	port_in_04[2] = 1'b0;
+	port_in_04[2] = 1'b1;
 end 
 // port_in_04[ 1 ]
 initial
 begin
-	port_in_04[1] = 1'b0;
+	port_in_04[1] = 1'b1;
 end 
 // port_in_04[ 0 ]
 initial
 begin
-	port_in_04[0] = 1'b0;
+	port_in_04[0] = 1'b1;
 end 
 // port_in_05[ 7 ]
 initial
 begin
-	port_in_05[7] = 1'b0;
+	port_in_05[7] = 1'b1;
 end 
 // port_in_05[ 6 ]
 initial
 begin
-	port_in_05[6] = 1'b0;
+	port_in_05[6] = 1'b1;
 end 
 // port_in_05[ 5 ]
 initial
 begin
-	port_in_05[5] = 1'b0;
+	port_in_05[5] = 1'b1;
 end 
 // port_in_05[ 4 ]
 initial
 begin
-	port_in_05[4] = 1'b0;
+	port_in_05[4] = 1'b1;
 end 
 // port_in_05[ 3 ]
 initial
 begin
-	port_in_05[3] = 1'b0;
+	port_in_05[3] = 1'b1;
 end 
 // port_in_05[ 2 ]
 initial
 begin
-	port_in_05[2] = 1'b0;
+	port_in_05[2] = 1'b1;
 end 
 // port_in_05[ 1 ]
 initial
 begin
-	port_in_05[1] = 1'b0;
+	port_in_05[1] = 1'b1;
 end 
 // port_in_05[ 0 ]
 initial
 begin
-	port_in_05[0] = 1'b0;
+	port_in_05[0] = 1'b1;
 end 
 // port_in_06[ 7 ]
 initial

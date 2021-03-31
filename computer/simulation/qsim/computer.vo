@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "03/30/2021 18:36:05"
+// DATE "03/31/2021 09:09:42"
 
 // 
 // Device: Altera EP3C16F484C6 Package FBGA484
@@ -1138,34 +1138,34 @@ wire \memory0|port_out_15[4]~feeder_combout ;
 wire \memory0|port_out_15[5]~feeder_combout ;
 wire \memory0|port_out_15[6]~feeder_combout ;
 wire \memory0|port_out_15[7]~feeder_combout ;
-wire [1:0] \cpu0|control0|Bus2_Sel ;
 wire [0:24] \memory0|RW|RW_rtl_0_bypass ;
-wire [7:0] \cpu0|datapath0|A_out ;
+wire [7:0] \memory0|port_out_05 ;
 wire [7:0] \cpu0|datapath0|IR ;
+wire [7:0] \memory0|port_out_07 ;
 wire [1:0] \cpu0|control0|Bus1_Sel ;
-wire [2:0] \cpu0|control0|ALU_Sel ;
-wire [7:0] \cpu0|datapath0|MAR_out ;
-wire [7:0] \cpu0|datapath0|PC_uns ;
+wire [7:0] \memory0|port_out_06 ;
+wire [7:0] \memory0|port_out_11 ;
 wire [7:0] \cpu0|datapath0|B_out ;
-wire [3:0] \cpu0|datapath0|CCR_Result ;
 wire [7:0] \memory0|port_out_02 ;
-wire [7:0] \memory0|port_out_10 ;
+wire [7:0] \memory0|port_out_00 ;
+wire [1:0] \cpu0|control0|Bus2_Sel ;
 wire [7:0] \memory0|port_out_04 ;
+wire [3:0] \cpu0|datapath0|CCR_Result ;
+wire [7:0] \memory0|ROM|data_out ;
+wire [7:0] \memory0|port_out_03 ;
+wire [7:0] \memory0|port_out_08 ;
+wire [7:0] \memory0|port_out_13 ;
+wire [7:0] \memory0|port_out_12 ;
+wire [7:0] \cpu0|datapath0|MAR_out ;
+wire [7:0] \cpu0|datapath0|A_out ;
+wire [2:0] \cpu0|control0|ALU_Sel ;
+wire [7:0] \memory0|port_out_09 ;
+wire [7:0] \memory0|port_out_15 ;
+wire [7:0] \memory0|port_out_10 ;
+wire [7:0] \cpu0|datapath0|PC_uns ;
+wire [7:0] \memory0|port_out_01 ;
 wire [7:0] \memory0|port_out_14 ;
 wire [7:0] \memory0|RW|data_out ;
-wire [7:0] \memory0|port_out_03 ;
-wire [7:0] \memory0|port_out_06 ;
-wire [7:0] \memory0|port_out_12 ;
-wire [7:0] \memory0|port_out_08 ;
-wire [7:0] \memory0|port_out_01 ;
-wire [7:0] \memory0|port_out_00 ;
-wire [7:0] \memory0|port_out_13 ;
-wire [7:0] \memory0|port_out_15 ;
-wire [7:0] \memory0|port_out_11 ;
-wire [7:0] \memory0|ROM|data_out ;
-wire [7:0] \memory0|port_out_09 ;
-wire [7:0] \memory0|port_out_05 ;
-wire [7:0] \memory0|port_out_07 ;
 
 wire [35:0] \memory0|RW|RW_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
 
