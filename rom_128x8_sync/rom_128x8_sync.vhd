@@ -11,6 +11,8 @@ end entity;
 
 architecture rom_128x8_sync_arch of rom_128x8_sync is 
 
+	
+
 	constant LDA_IMM	: std_logic_vector ( 7 downto 0) := x"86";
 	constant LDA_DIR	: std_logic_vector ( 7 downto 0) := x"87";
 	constant LDB_IMM	: std_logic_vector ( 7 downto 0) := x"88";
@@ -45,6 +47,7 @@ architecture rom_128x8_sync_arch of rom_128x8_sync is
 					    5	=> x"E0",
 					    6	=> BRA,
 					    7	=> x"00",
+						 8 => x"BB",
 					    others => x"00");
   signal  EN    : std_logic;
   

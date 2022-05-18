@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+
+entity rom_test is
+  port(clock    :in std_logic;
+       address  :in std_logic_vector(7 downto 0);
+       data_out :out std_logic_vector(7 downto 0));
+end entity;
+
+
+
+architecture <arch_name> of <entity_name> is
+
+	-- Declarations (optional)
+	component 
+
+begin
+
+
+
+end <arch_name>;

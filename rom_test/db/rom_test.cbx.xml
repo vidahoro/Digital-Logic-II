@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="rom_test">
+		<CBX_INST_ENTRY INSTANCE_NAME="|rom_test|rom_128x8_sync:rom|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_kj01.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
