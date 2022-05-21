@@ -1,27 +1,27 @@
 |rom_test
-clock => rom_128x8_sync:rom.clock
-address[0] => rom_128x8_sync:rom.address[0]
-address[1] => rom_128x8_sync:rom.address[1]
-address[2] => rom_128x8_sync:rom.address[2]
-address[3] => rom_128x8_sync:rom.address[3]
-address[4] => rom_128x8_sync:rom.address[4]
-address[5] => rom_128x8_sync:rom.address[5]
-address[6] => rom_128x8_sync:rom.address[6]
-address[7] => rom_128x8_sync:rom.address[7]
-hex0[6] << parte_1:S0.SEG[0]
-hex0[5] << parte_1:S0.SEG[1]
-hex0[4] << parte_1:S0.SEG[2]
-hex0[3] << parte_1:S0.SEG[3]
-hex0[2] << parte_1:S0.SEG[4]
-hex0[1] << parte_1:S0.SEG[5]
-hex0[0] << parte_1:S0.SEG[6]
-hex1[6] << parte_1:S1.SEG[0]
-hex1[5] << parte_1:S1.SEG[1]
-hex1[4] << parte_1:S1.SEG[2]
-hex1[3] << parte_1:S1.SEG[3]
-hex1[2] << parte_1:S1.SEG[4]
-hex1[1] << parte_1:S1.SEG[5]
-hex1[0] << parte_1:S1.SEG[6]
+CLOCK_50 => rom_128x8_sync:rom.clock
+SW[0] => rom_128x8_sync:rom.address[0]
+SW[1] => rom_128x8_sync:rom.address[1]
+SW[2] => rom_128x8_sync:rom.address[2]
+SW[3] => rom_128x8_sync:rom.address[3]
+SW[4] => rom_128x8_sync:rom.address[4]
+SW[5] => rom_128x8_sync:rom.address[5]
+SW[6] => rom_128x8_sync:rom.address[6]
+SW[7] => rom_128x8_sync:rom.address[7]
+HEX0[0] << parte_1:S0.HEX0[0]
+HEX0[1] << parte_1:S0.HEX0[1]
+HEX0[2] << parte_1:S0.HEX0[2]
+HEX0[3] << parte_1:S0.HEX0[3]
+HEX0[4] << parte_1:S0.HEX0[4]
+HEX0[5] << parte_1:S0.HEX0[5]
+HEX0[6] << parte_1:S0.HEX0[6]
+HEX1[0] << parte_1:S1.HEX0[0]
+HEX1[1] << parte_1:S1.HEX0[1]
+HEX1[2] << parte_1:S1.HEX0[2]
+HEX1[3] << parte_1:S1.HEX0[3]
+HEX1[4] << parte_1:S1.HEX0[4]
+HEX1[5] << parte_1:S1.HEX0[5]
+HEX1[6] << parte_1:S1.HEX0[6]
 
 
 |rom_test|rom_128x8_sync:rom
@@ -144,17 +144,13 @@ SW[3] => Mux3.IN16
 SW[3] => Mux4.IN16
 SW[3] => Mux5.IN16
 SW[3] => Mux6.IN16
-SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-k <= <GND>
-r <= <VCC>
-s <= <VCC>
-t <= <VCC>
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |rom_test|parte_1:S1
@@ -186,16 +182,12 @@ SW[3] => Mux3.IN16
 SW[3] => Mux4.IN16
 SW[3] => Mux5.IN16
 SW[3] => Mux6.IN16
-SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-k <= <GND>
-r <= <VCC>
-s <= <VCC>
-t <= <VCC>
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
