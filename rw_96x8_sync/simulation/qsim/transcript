@@ -28,5 +28,5 @@
 # Loading work.rw_96x8_sync_vlg_sample_tst
 # Loading work.rw_96x8_sync_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(279)
+# ** Note: $finish    : Waveform1.vwf.vt(279)
 #    Time: 1 us  Iteration: 0  Instance: /rw_96x8_sync_vlg_vec_tst/tb_out
