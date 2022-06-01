@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\User\Desktop\Unicauca\Circuitos_Digitales_II\Proyectos2022\Digital-Logic-II\alu_test\simulation\qsim
+valu_test
+Z1 I[EaFkW]z5[zbmG[nn2QK]3
+Z2 V?E`AB8?1_OmPWnZEk2<G50
+Z3 dC:\Users\User\Desktop\Unicauca\Circuitos_Digitales_II\Proyectos2022\Digital-Logic-II\alu_test\simulation\qsim
+Z4 w1654097160
+Z5 8alu_test.vo
+Z6 Falu_test.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 9O8JBP=Y1;gTWe;YY0Z^G0
+!s85 0
+Z10 !s108 1654097162.353000
+Z11 !s107 alu_test.vo|
+Z12 !s90 -work|work|alu_test.vo|
+!s101 -O0
+valu_test_vlg_check_tst
+!i10b 1
+!s100 dK>[O;z^gH_8moSl4ET1S3
+IEW]]go1?8BGD?;GHL]RXF1
+VG2RT:IdcV5e5V_U_2S`@z0
+R3
+Z13 w1654097158
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1654097162.484000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+valu_test_vlg_sample_tst
+!i10b 1
+!s100 S:_4M:MB6JI1Y5<JBbS[V2
+ISe?obXm0UWo:aWQ_GAHRO2
+VZPdJa1^2]KB2bL>R>JMa;3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+valu_test_vlg_vec_tst
+!i10b 1
+!s100 o[67a4`hjfn5[97PW@]BQ0
+IVKQ^JInNEkJo:oXaJgO102
+VzjJOF<nb:<hg]YDlMj0nR0
+R3
+R13
+R14
+R15
+L0 477
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
