@@ -17,30 +17,15 @@ entity memory is
           port_in_05     : in  std_logic_vector (7 downto 0);
           port_in_06     : in  std_logic_vector (7 downto 0);               
           port_in_07     : in  std_logic_vector (7 downto 0);
-          port_in_08     : in  std_logic_vector (7 downto 0);
-          port_in_09     : in  std_logic_vector (7 downto 0);
-          port_in_10     : in  std_logic_vector (7 downto 0);
-          port_in_11     : in  std_logic_vector (7 downto 0);
-          port_in_12     : in  std_logic_vector (7 downto 0);
-          port_in_13     : in  std_logic_vector (7 downto 0);
-          port_in_14     : in  std_logic_vector (7 downto 0);
-          port_in_15     : in  std_logic_vector (7 downto 0);                                                                   
-          port_out_00    : out std_logic_vector (7 downto 0);
+			 port_out_00    : out std_logic_vector (7 downto 0);
           port_out_01    : out std_logic_vector (7 downto 0);
           port_out_02    : out std_logic_vector (7 downto 0);
           port_out_03    : out std_logic_vector (7 downto 0);
           port_out_04    : out std_logic_vector (7 downto 0);
           port_out_05    : out std_logic_vector (7 downto 0);
           port_out_06    : out std_logic_vector (7 downto 0);
-          port_out_07    : out std_logic_vector (7 downto 0);
-          port_out_08    : out std_logic_vector (7 downto 0);
-          port_out_09    : out std_logic_vector (7 downto 0);
-          port_out_10    : out std_logic_vector (7 downto 0);
-          port_out_11    : out std_logic_vector (7 downto 0);
-          port_out_12    : out std_logic_vector (7 downto 0);
-          port_out_13    : out std_logic_vector (7 downto 0);
-          port_out_14    : out std_logic_vector (7 downto 0);
-          port_out_15    : out std_logic_vector (7 downto 0));
+          port_out_07    : out std_logic_vector (7 downto 0));
+          
 end entity;
 
 architecture memory_arch of memory is
@@ -156,102 +141,11 @@ begin
 			end if;
 		end if;
 	end process;
-
-	PORT8 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_08 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"E8" and writ = '1') then
-				port_out_08 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT9 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_09 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"E9" and writ = '1') then
-				port_out_09 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT10 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_10 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"EA" and writ = '1') then
-				port_out_10 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT11 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_11 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"EB" and writ = '1') then
-				port_out_11 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT12 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_12 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"EC" and writ = '1') then
-				port_out_12 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT13 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_13 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"ED" and writ = '1') then
-				port_out_13 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT14 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_14 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"EE" and writ = '1') then
-				port_out_14 <= data_in;
-			end if;
-		end if;
-	end process;
-
-	PORT15 : process (clock, reset)
-	begin
-		if (reset = '0') then
-			port_out_15 <= x"00";
-		elsif (rising_edge(clock)) then
-			if(address = x"EF" and writ = '1') then
-				port_out_15 <= data_in;
-			end if;
-		end if;
-	end process;
-
 -------------------------------------------------Data Out Multiplexer----------------------------------------------------------
 
 	MUX : process 	(address, rom_data, rw_data,
 			 port_in_00, port_in_01, port_in_02, port_in_03,
-			 port_in_04, port_in_05, port_in_06, port_in_07,
-			 port_in_08, port_in_09, port_in_10, port_in_11,
-			 port_in_12, port_in_13, port_in_14, port_in_15)
+			 port_in_04, port_in_05, port_in_06, port_in_07)
 	begin
 		if((to_integer(unsigned(address)) >= 0) and
 			(to_integer(unsigned(address)) <= 127)) then
@@ -267,14 +161,6 @@ begin
 		elsif(address = x"F5") then data_out <= port_in_05;
 		elsif(address = x"F6") then data_out <= port_in_06;
 		elsif(address = x"F7") then data_out <= port_in_07;
-		elsif(address = x"F8") then data_out <= port_in_08;
-		elsif(address = x"F9") then data_out <= port_in_09;
-		elsif(address = x"FA") then data_out <= port_in_10;
-		elsif(address = x"FB") then data_out <= port_in_11;
-		elsif(address = x"FC") then data_out <= port_in_12;
-		elsif(address = x"FD") then data_out <= port_in_13;
-		elsif(address = x"FE") then data_out <= port_in_14;
-		elsif(address = x"FF") then data_out <= port_in_15;
 		else data_out <= x"00";
 		end if;
 	end process;

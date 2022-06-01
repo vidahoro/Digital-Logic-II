@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\vidah\Desktop\Universidad_del_Cauca\Circuitos_Digitales_II\Proyectos\Entrega1\alu\simulation\qsim
 valu
-Z1 !s100 o]CF4WcZob<<oEzI>^5E70
-Z2 IQNDBieSJ8^AnVZao3QPh02
+Z1 !s100 Sb6bOFXWhz<=46SWPfnjO3
+Z2 I[RHSBdO8`1Ibic8a<D[Nc2
 Z3 Vfe4TX3f8RIESEPKB?dL^O0
-Z4 dC:\Users\vidah\Desktop\Universidad_del_Cauca\Circuitos_Digitales_II\Proyectos\Entrega1\alu\simulation\qsim
-Z5 w1617205460
+Z4 dC:\Users\User\Desktop\Unicauca\Circuitos_Digitales_II\Proyectos2022\Digital-Logic-II\alu\simulation\qsim
+Z5 w1653579502
 Z6 8alu.vo
 Z7 Falu.vo
 L0 31
@@ -19,32 +19,32 @@ Z9 !s90 -work|work|alu.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1617205461.765000
+Z11 !s108 1653579503.434000
 Z12 !s107 alu.vo|
 !s101 -O0
 valu_vlg_check_tst
 !i10b 1
-Z13 !s100 zcB8R]AJdGf`L>^]J=QKl2
-Z14 If1S:EoA>S_Aehoa^@`STO2
+Z13 !s100 f?ZTk^f[eRQ:Xig8VXCSF2
+Z14 Ia3nF7^^6XXVfi0Nz@^k`X0
 Z15 Vj^MbKiC:I:nl7h^cAlIA=2
 R4
-Z16 w1617205458
-Z17 8Waveform1.vwf.vt
-Z18 FWaveform1.vwf.vt
+Z16 w1653579500
+Z17 8Waveform3.vwf.vt
+Z18 FWaveform3.vwf.vt
 L0 61
 R8
 r1
 !s85 0
 31
-Z19 !s108 1617205461.887000
-Z20 !s107 Waveform1.vwf.vt|
-Z21 !s90 -work|work|Waveform1.vwf.vt|
+Z19 !s108 1653579503.559000
+Z20 !s107 Waveform3.vwf.vt|
+Z21 !s90 -work|work|Waveform3.vwf.vt|
 !s101 -O0
 R10
 valu_vlg_sample_tst
 !i10b 1
-Z22 !s100 ;PhX<FoV=MOUmWb^eGR;D2
-Z23 IXWGDkP0nUnP>U3D;1W]VH0
+Z22 !s100 ;?2JHUYP7XhCk@mD6<o1m2
+Z23 I4OMeLXSKXPZjKa9WhaFUg1
 Z24 V2MT>MY541TlFkEO3OiPNI0
 R4
 R16
@@ -62,14 +62,14 @@ R21
 R10
 valu_vlg_vec_tst
 !i10b 1
-Z25 !s100 >U^SKjg2j>`Y^Vdm0miMZ1
-Z26 I`Nb6?^GS_nHAlF`OLk7_Q2
-Z27 VKh<<g<fN<83>nOE>KA>;A3
+!s100 al:e>fGd[?DLn>iKAbE]L1
+Ii3mOkczPcm=KjM06L9^4M0
+Z25 VKh<<g<fN<83>nOE>KA>;A3
 R4
 R16
 R17
 R18
-Z28 L0 361
+Z26 L0 361
 R8
 r1
 !s85 0

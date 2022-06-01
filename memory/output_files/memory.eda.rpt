@@ -1,5 +1,5 @@
 EDA Netlist Writer report for memory
-Tue Mar 30 10:21:03 2021
+Tue May 31 10:12:38 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Mar 30 10:21:03 2021 ;
+; EDA Netlist Writer Status ; Successful - Tue May 31 10:12:38 2022 ;
 ; Revision Name             ; memory                                ;
 ; Top-level Entity Name     ; memory                                ;
 ; Family                    ; Cyclone III                           ;
@@ -66,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                          ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                     ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_6_1200mv_85c_slow.vho      ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_6_1200mv_0c_slow.vho       ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_min_1200mv_0c_fast.vho     ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory.vho                        ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_6_1200mv_0c_vhd_slow.sdo   ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_min_1200mv_0c_vhd_fast.sdo ;
-; C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/memory_vhd.sdo                    ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                        ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                   ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_6_1200mv_85c_slow.vho      ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_6_1200mv_0c_slow.vho       ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_min_1200mv_0c_fast.vho     ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory.vho                        ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_6_1200mv_85c_vhd_slow.sdo  ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_6_1200mv_0c_vhd_slow.sdo   ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_min_1200mv_0c_vhd_fast.sdo ;
+; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/memory_vhd.sdo                    ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +88,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Mar 30 10:21:01 2021
+    Info: Processing started: Tue May 31 10:12:37 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off memory -c memory
-Info (204019): Generated file memory_6_1200mv_85c_slow.vho in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory_6_1200mv_0c_slow.vho in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory_min_1200mv_0c_fast.vho in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory.vho in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file memory_vhd.sdo in folder "C:/Users/vidah/Desktop/Universidad_del_Cauca/Circuitos_Digitales_II/Proyectos/Entrega1/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_6_1200mv_85c_slow.vho in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_6_1200mv_0c_slow.vho in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_min_1200mv_0c_fast.vho in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory.vho in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file memory_vhd.sdo in folder "C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4563 megabytes
-    Info: Processing ended: Tue Mar 30 10:21:03 2021
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4553 megabytes
+    Info: Processing ended: Tue May 31 10:12:38 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
