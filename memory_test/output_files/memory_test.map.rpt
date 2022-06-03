@@ -1,5 +1,5 @@
 Analysis & Synthesis report for memory_test
-Wed Jun 01 09:41:20 2022
+Thu Jun 02 10:27:00 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,9 +10,20 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Port Connectivity Checks: "parte_1:display1"
-  6. Port Connectivity Checks: "parte_1:display0"
-  7. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. General Register Statistics
+ 10. Registers Packed Into Inferred Megafunctions
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0|altsyncram_nod1:auto_generated
+ 13. Source assignments for memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0|altsyncram_a811:auto_generated
+ 14. Parameter Settings for Inferred Entity Instance: memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0
+ 15. Parameter Settings for Inferred Entity Instance: memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -38,20 +49,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Jun 01 09:41:20 2022          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 02 10:26:59 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; memory_test                                ;
 ; Top-level Entity Name              ; memory_test                                ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 147                                        ;
+;     Total combinational functions  ; 83                                         ;
+;     Dedicated logic registers      ; 64                                         ;
+; Total registers                    ; 64                                         ;
+; Total pins                         ; 169                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 3,072                                      ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -153,24 +164,302 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "parte_1:display1"                                                                                                 ;
-+------+---------+------------------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type    ; Severity         ; Details                                                                                                  ;
-+------+---------+------------------+----------------------------------------------------------------------------------------------------------+
-; HEX  ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                   ;
-; hex0 ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+---------+------------------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
++--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                            ; Library ;
++--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; ../rw_96x8_sync/rw_96x8_sync.vhd           ; yes             ; User VHDL File               ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/rw_96x8_sync/rw_96x8_sync.vhd      ;         ;
+; ../rom_128x8_sync/rom_128x8_sync.vhd       ; yes             ; User VHDL File               ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/rom_128x8_sync/rom_128x8_sync.vhd  ;         ;
+; ../memory/memory.vhd                       ; yes             ; User VHDL File               ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/memory.vhd                  ;         ;
+; ../../trabajo/trabajos/parte_1/parte_1.vhd ; yes             ; User VHDL File               ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/trabajo/trabajos/parte_1/parte_1.vhd                ;         ;
+; ../memory/memory_test.vhd                  ; yes             ; User VHDL File               ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/memory_test.vhd             ;         ;
+; altsyncram.tdf                             ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                                                           ;         ;
+; stratix_ram_block.inc                      ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                    ;         ;
+; lpm_mux.inc                                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                                              ;         ;
+; lpm_decode.inc                             ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                                                           ;         ;
+; aglobal131.inc                             ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                                           ;         ;
+; a_rdenreg.inc                              ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                            ;         ;
+; altrom.inc                                 ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                                               ;         ;
+; altram.inc                                 ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                                               ;         ;
+; altdpram.inc                               ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                                                             ;         ;
+; db/altsyncram_nod1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory_test/db/altsyncram_nod1.tdf ;         ;
+; db/altsyncram_a811.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory_test/db/altsyncram_a811.tdf ;         ;
++--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "parte_1:display0"                                                                                                 ;
-+------+---------+------------------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type    ; Severity         ; Details                                                                                                  ;
-+------+---------+------------------+----------------------------------------------------------------------------------------------------------+
-; HEX  ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                   ;
-; hex0 ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+---------+------------------+----------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 147         ;
+;                                             ;             ;
+; Total combinational functions               ; 83          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 82          ;
+;     -- 3 input functions                    ; 1           ;
+;     -- <=2 input functions                  ; 0           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 83          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 64          ;
+;     -- Dedicated logic registers            ; 64          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 169         ;
+; Total memory bits                           ; 3072        ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 80          ;
+; Total fan-out                               ; 1002        ;
+; Average fan-out                             ; 2.00        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
+; |memory_test                                 ; 83 (0)            ; 64 (0)       ; 3072        ; 0            ; 0       ; 0         ; 169  ; 0            ; |memory_test                                                                                   ; work         ;
+;    |memory:U0|                               ; 69 (67)           ; 64 (64)      ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0                                                                         ; work         ;
+;       |rom_128x8_sync:ROM|                   ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0|rom_128x8_sync:ROM                                                      ; work         ;
+;          |altsyncram:Mux7_rtl_0|             ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0                                ; work         ;
+;             |altsyncram_a811:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0|altsyncram_a811:auto_generated ; work         ;
+;       |rw_96x8_sync:RW|                      ; 2 (2)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0|rw_96x8_sync:RW                                                         ; work         ;
+;          |altsyncram:RW_rtl_0|               ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0                                     ; work         ;
+;             |altsyncram_nod1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0|altsyncram_nod1:auto_generated      ; work         ;
+;    |parte_1:out0|                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|parte_1:out0                                                                      ; work         ;
+;    |parte_1:out1|                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_test|parte_1:out1                                                                      ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                             ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------+
+; Name                                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                              ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------+
+; memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0|altsyncram_a811:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 128          ; 8            ; --           ; --           ; 1024 ; memory_test.memory_test0.rtl.mif ;
+; memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0|altsyncram_nod1:auto_generated|ALTSYNCRAM      ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None                             ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 64    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 64    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 64    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                 ;
++---------------------------------------------+-----------------------------------------+------+
+; Register Name                               ; Megafunction                            ; Type ;
++---------------------------------------------+-----------------------------------------+------+
+; memory:U0|rw_96x8_sync:RW|data_out[0..7]    ; memory:U0|rw_96x8_sync:RW|RW_rtl_0      ; RAM  ;
+; memory:U0|rom_128x8_sync:ROM|data_out[0..7] ; memory:U0|rom_128x8_sync:ROM|Mux7_rtl_0 ; ROM  ;
++---------------------------------------------+-----------------------------------------+------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 13:1               ; 8 bits    ; 64 LEs        ; 56 LEs               ; 8 LEs                  ; No         ; |memory_test|memory:U0|data_out[3] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Source assignments for memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0|altsyncram_nod1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------+
+; Assignment                      ; Value              ; From ; To                                    ;
++---------------------------------+--------------------+------+---------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
++---------------------------------+--------------------+------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0|altsyncram_a811:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0 ;
++------------------------------------+----------------------+------------------------------------+
+; Parameter Name                     ; Value                ; Type                               ;
++------------------------------------+----------------------+------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                            ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                     ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                            ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                            ;
+; WIDTH_A                            ; 8                    ; Untyped                            ;
+; WIDTHAD_A                          ; 8                    ; Untyped                            ;
+; NUMWORDS_A                         ; 256                  ; Untyped                            ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                            ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                            ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                            ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; WIDTH_B                            ; 8                    ; Untyped                            ;
+; WIDTHAD_B                          ; 8                    ; Untyped                            ;
+; NUMWORDS_B                         ; 256                  ; Untyped                            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                            ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                            ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                            ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                            ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                            ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                            ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                            ;
+; BYTE_SIZE                          ; 8                    ; Untyped                            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                            ;
+; INIT_FILE                          ; UNUSED               ; Untyped                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                            ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                            ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                            ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                            ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
+; DEVICE_FAMILY                      ; Cyclone III          ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_nod1      ; Untyped                            ;
++------------------------------------+----------------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0 ;
++------------------------------------+----------------------------------+-----------------------------+
+; Parameter Name                     ; Value                            ; Type                        ;
++------------------------------------+----------------------------------+-----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                ; Untyped                     ;
+; AUTO_CARRY_CHAINS                  ; ON                               ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                              ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS                ; ON                               ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                              ; IGNORE_CASCADE              ;
+; WIDTH_BYTEENA                      ; 1                                ; Untyped                     ;
+; OPERATION_MODE                     ; ROM                              ; Untyped                     ;
+; WIDTH_A                            ; 8                                ; Untyped                     ;
+; WIDTHAD_A                          ; 7                                ; Untyped                     ;
+; NUMWORDS_A                         ; 128                              ; Untyped                     ;
+; OUTDATA_REG_A                      ; UNREGISTERED                     ; Untyped                     ;
+; ADDRESS_ACLR_A                     ; NONE                             ; Untyped                     ;
+; OUTDATA_ACLR_A                     ; NONE                             ; Untyped                     ;
+; WRCONTROL_ACLR_A                   ; NONE                             ; Untyped                     ;
+; INDATA_ACLR_A                      ; NONE                             ; Untyped                     ;
+; BYTEENA_ACLR_A                     ; NONE                             ; Untyped                     ;
+; WIDTH_B                            ; 1                                ; Untyped                     ;
+; WIDTHAD_B                          ; 1                                ; Untyped                     ;
+; NUMWORDS_B                         ; 1                                ; Untyped                     ;
+; INDATA_REG_B                       ; CLOCK1                           ; Untyped                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                           ; Untyped                     ;
+; RDCONTROL_REG_B                    ; CLOCK1                           ; Untyped                     ;
+; ADDRESS_REG_B                      ; CLOCK1                           ; Untyped                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED                     ; Untyped                     ;
+; BYTEENA_REG_B                      ; CLOCK1                           ; Untyped                     ;
+; INDATA_ACLR_B                      ; NONE                             ; Untyped                     ;
+; WRCONTROL_ACLR_B                   ; NONE                             ; Untyped                     ;
+; ADDRESS_ACLR_B                     ; NONE                             ; Untyped                     ;
+; OUTDATA_ACLR_B                     ; NONE                             ; Untyped                     ;
+; RDCONTROL_ACLR_B                   ; NONE                             ; Untyped                     ;
+; BYTEENA_ACLR_B                     ; NONE                             ; Untyped                     ;
+; WIDTH_BYTEENA_A                    ; 1                                ; Untyped                     ;
+; WIDTH_BYTEENA_B                    ; 1                                ; Untyped                     ;
+; RAM_BLOCK_TYPE                     ; AUTO                             ; Untyped                     ;
+; BYTE_SIZE                          ; 8                                ; Untyped                     ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                        ; Untyped                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ             ; Untyped                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ             ; Untyped                     ;
+; INIT_FILE                          ; memory_test.memory_test0.rtl.mif ; Untyped                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A                           ; Untyped                     ;
+; MAXIMUM_DEPTH                      ; 0                                ; Untyped                     ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                           ; Untyped                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                           ; Untyped                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                           ; Untyped                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                           ; Untyped                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                  ; Untyped                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                  ; Untyped                     ;
+; ENABLE_ECC                         ; FALSE                            ; Untyped                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                            ; Untyped                     ;
+; WIDTH_ECCSTATUS                    ; 3                                ; Untyped                     ;
+; DEVICE_FAMILY                      ; Cyclone III                      ; Untyped                     ;
+; CBXI_PARAMETER                     ; altsyncram_a811                  ; Untyped                     ;
++------------------------------------+----------------------------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                               ;
++-------------------------------------------+----------------------------------------------------+
+; Name                                      ; Value                                              ;
++-------------------------------------------+----------------------------------------------------+
+; Number of entity instances                ; 2                                                  ;
+; Entity Instance                           ; memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0      ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                          ;
+;     -- WIDTH_A                            ; 8                                                  ;
+;     -- NUMWORDS_A                         ; 256                                                ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
+;     -- WIDTH_B                            ; 8                                                  ;
+;     -- NUMWORDS_B                         ; 256                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ;
+; Entity Instance                           ; memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                ;
+;     -- WIDTH_A                            ; 8                                                  ;
+;     -- NUMWORDS_A                         ; 128                                                ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
+;     -- WIDTH_B                            ; 1                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ;
++-------------------------------------------+----------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -179,7 +468,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jun 01 09:41:18 2022
+    Info: Processing started: Thu Jun 02 10:26:56 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory_test -c memory_test
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /users/user/desktop/unicauca/circuitos_digitales_ii/proyectos2022/digital-logic-ii/rw_96x8_sync/rw_96x8_sync.vhd
@@ -204,14 +493,159 @@ Warning (10540): VHDL Signal Declaration warning at memory_test.vhd(21): used ex
 Info (12128): Elaborating entity "memory" for hierarchy "memory:U0"
 Info (12128): Elaborating entity "rom_128x8_sync" for hierarchy "memory:U0|rom_128x8_sync:ROM"
 Info (12128): Elaborating entity "rw_96x8_sync" for hierarchy "memory:U0|rw_96x8_sync:RW"
-Info (12128): Elaborating entity "parte_1" for hierarchy "parte_1:display0"
-Error (12002): Port "HEX" does not exist in macrofunction "display1" File: C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/memory_test.vhd Line: 52
-Error (12002): Port "HEX" does not exist in macrofunction "display0" File: C:/Users/User/Desktop/Unicauca/Circuitos_Digitales_II/Proyectos2022/Digital-Logic-II/memory/memory_test.vhd Line: 51
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 5 warnings
-    Error: Peak virtual memory: 4644 megabytes
-    Error: Processing ended: Wed Jun 01 09:41:20 2022
-    Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12128): Elaborating entity "parte_1" for hierarchy "parte_1:out0"
+Warning (276027): Inferred dual-clock RAM node "memory:U0|rw_96x8_sync:RW|RW_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (19000): Inferred 2 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "memory:U0|rw_96x8_sync:RW|RW_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 8
+        Info (286033): Parameter NUMWORDS_A set to 256
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 8
+        Info (286033): Parameter NUMWORDS_B set to 256
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "memory:U0|rom_128x8_sync:ROM|Mux7_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 7
+        Info (286033): Parameter NUMWORDS_A set to 128
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to memory_test.memory_test0.rtl.mif
+Info (12130): Elaborated megafunction instantiation "memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0"
+Info (12133): Instantiated megafunction "memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "8"
+    Info (12134): Parameter "NUMWORDS_A" = "256"
+    Info (12134): Parameter "WIDTH_B" = "8"
+    Info (12134): Parameter "WIDTHAD_B" = "8"
+    Info (12134): Parameter "NUMWORDS_B" = "256"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nod1.tdf
+    Info (12023): Found entity 1: altsyncram_nod1
+Info (12130): Elaborated megafunction instantiation "memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0"
+Info (12133): Instantiated megafunction "memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "7"
+    Info (12134): Parameter "NUMWORDS_A" = "128"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "memory_test.memory_test0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_a811.tdf
+    Info (12023): Found entity 1: altsyncram_a811
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "data_out[0]" is stuck at GND
+    Warning (13410): Pin "data_out[1]" is stuck at GND
+    Warning (13410): Pin "data_out[2]" is stuck at GND
+    Warning (13410): Pin "data_out[3]" is stuck at GND
+    Warning (13410): Pin "data_out[4]" is stuck at GND
+    Warning (13410): Pin "data_out[5]" is stuck at GND
+    Warning (13410): Pin "data_out[6]" is stuck at GND
+    Warning (13410): Pin "data_out[7]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Warning (20013): Ignored assignments for entity "DE0_Default" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity DE0_Default -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity DE0_Default -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROUTING_REGION OFF -entity DE0_Default -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 14622752 -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE0_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_Default -section_id Top was ignored
+Warning (20013): Ignored assignments for entity "Lab3a_s1" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity Lab3a_s1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Lab3a_s1 -section_id Top was ignored
+Warning (20013): Ignored assignments for entity "Lab3b" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity Lab3b -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Lab3b -section_id Top was ignored
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 332 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 83 input pins
+    Info (21059): Implemented 86 output pins
+    Info (21061): Implemented 147 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Thu Jun 02 10:27:00 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

@@ -38,7 +38,7 @@ architecture behavioral of memory_test is
 	port(-- Input ports
 			SW : in std_logic_vector(3 downto 0);
 		-- Output ports
-			HEX : out std_logic_vector (6 downto 0));
+			HEX0: out std_logic_vector (6 downto 0));
 	end component;
 	
 	begin
@@ -48,7 +48,7 @@ architecture behavioral of memory_test is
 									port_in_04, port_in_05, port_in_06, port_in_07,port_out_00, port_out_01, port_out_02, port_out_03,
 									port_out_04, port_out_05, port_out_06, port_out_07, port_data_out);
 		
-		display0 : parte_1 port map(SW0, HEX0);
-		display1 : parte_1 port map(SW1, HEX1);
+		out0 : parte_1 port map(SW0, HEX0);
+		out1 : parte_1 port map(SW1, HEX1);
 		
 	end behavioral;

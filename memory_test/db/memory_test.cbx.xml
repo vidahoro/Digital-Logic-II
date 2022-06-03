@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="memory_test">
+		<CBX_INST_ENTRY INSTANCE_NAME="|memory_test|memory:U0|rom_128x8_sync:ROM|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_a811.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|memory_test|memory:U0|rw_96x8_sync:RW|altsyncram:RW_rtl_0" CBX_FILE_NAME="altsyncram_nod1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
